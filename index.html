@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="google-site-verification" content="8eYLL8pjjzX5ddO3zAoZG3S8N0I2WXRhW15FeuThduQ" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#11100d">
+<title>Rajasthani Kachori and Snacks</title>
+<style>
+:root{--gold:#ffc928;--red:#bd2026;--ink:#11100d;--cream:#fff5e5;--muted:#6e6254}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--cream)}
+header{background:#11100d;color:#fff;padding:15px max(5%,calc((100% - 1180px)/2));display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:3px solid var(--gold);position:sticky;top:0;z-index:5}
+.brand{font-weight:900;font-size:clamp(1.15rem,3vw,2rem);line-height:1.05;color:var(--gold)}.brand span{display:block;color:white;font-size:.62em;margin-top:5px}
+nav{display:flex;gap:20px;flex-wrap:wrap}nav a{color:#fff;text-decoration:none;font-weight:700}nav a:hover{color:var(--gold)}
+.hero{min-height:420px;padding:65px max(5%,calc((100% - 1180px)/2));display:flex;align-items:center;color:white;background:linear-gradient(90deg,rgba(20,12,5,.94),rgba(20,12,5,.62),rgba(20,12,5,.1)),url('https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1800&q=85') center/cover}
+.hero-content{max-width:610px}.eyebrow{color:var(--gold);font-weight:800;letter-spacing:2px}.hero h1{font-family:Georgia,serif;font-size:clamp(2.8rem,7vw,5.7rem);line-height:.95;margin:14px 0}.hero h1 span{color:var(--gold)}.hero p{font-size:1.2rem;line-height:1.6}.button{display:inline-block;background:var(--gold);color:#17130a;text-decoration:none;border:0;border-radius:999px;padding:14px 24px;font-size:1rem;font-weight:900;cursor:pointer}.button:hover{filter:brightness(.94)}
+section{padding:55px max(5%,calc((100% - 1180px)/2))}.section-title{text-align:center;font-size:clamp(2rem,5vw,3rem);margin:0 0 8px;color:var(--red);font-family:Georgia,serif}.subtitle{text-align:center;color:var(--muted);margin:0 0 30px}
+.menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.item{background:#fffdf8;border:1px solid #ead9bf;border-radius:18px;padding:14px;box-shadow:0 5px 18px #6e462010;overflow:hidden}.food-photo{height:190px;border-radius:12px;background-size:cover;background-position:center}.photo1{background-image:url('https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?auto=format&fit=crop&w=800&q=80')}.photo2{background-image:url('https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy%2Cf_auto%2Cq_auto%2Ch_960%2Cw_960/InstamartAssets/Receipes/dal_kachori.webp')}.photo3{background-image:url('https://www.jmbbakers.com/tinified/pyaaz-kachori.png')}.item h3{font-size:1.35rem;margin:15px 0 5px}.price{font-size:1.6rem;font-weight:900;color:var(--red);margin:0 0 15px}.add-row{display:flex;align-items:center;justify-content:space-between;gap:10px}.add-btn{border:0;background:var(--ink);color:white;border-radius:10px;padding:10px 14px;font-weight:800;cursor:pointer}.add-btn:hover{background:var(--red)}
+.order-area{background:#171613;color:white}.order-layout{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}.order-box,.location-box{border:1px solid #40382a;background:#201f1a;padding:24px;border-radius:18px}.order-box h2,.location-box h2{color:var(--gold);margin-top:0}.cart-line{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid #454035}.cart-line button{background:transparent;border:1px solid #777;color:#fff;border-radius:6px;cursor:pointer}.total{font-size:1.3rem;font-weight:900;color:var(--gold);display:flex;justify-content:space-between;margin:20px 0}
+label{display:block;font-weight:700;margin:14px 0 6px}input,textarea,select{width:100%;padding:12px;border-radius:9px;border:1px solid #cbbda8;font:inherit}textarea{min-height:75px;resize:vertical}.hint{font-size:.9rem;color:#d8cdbb;line-height:1.5}.full{width:100%;margin-top:12px}.address{font-size:1.05rem;line-height:1.7}.map{width:100%;height:230px;border:0;border-radius:12px;margin-top:12px;background:#e9e3d8}
+footer{background:#0b0b0a;color:#eee;text-align:center;padding:24px;border-top:2px solid var(--gold)}footer strong{color:var(--gold)}
+.toast{display:none;background:#e9f8df;color:#173c0c;padding:12px;border-radius:9px;margin-top:12px;font-weight:700}
+@media(max-width:760px){header{position:static;align-items:flex-start;flex-direction:column}nav{gap:13px}.hero{min-height:390px;padding-top:45px;padding-bottom:45px}.menu-grid{grid-template-columns:1fr}.food-photo{height:220px}.order-layout{grid-template-columns:1fr}section{padding-top:40px;padding-bottom:40px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">RAJASTHANI <span>Kachori and Snacks</span></div>
+  <nav><a href="#home">Home</a><a href="#menu">Menu</a><a href="#order">Order Now</a><a href="#location">Location</a></nav>
+</header>
+<main>
+<section class="hero" id="home">
+ <div class="hero-content">
+  <div class="eyebrow">ASLI SWAAD • RAJASTHANI ANDAAZ</div>
+  <h1><span>Rajasthani</span><br>Kachori &amp; Snacks</h1>
+  <p>Garma-garam kachori aur samose ka asli desi swaad. Order karein, phir shop se fresh pickup karein!</p>
+  <a class="button" href="#menu">Menu Dekhein ↓</a>
+ </div>
+</section>
+<section id="menu">
+ <h2 class="section-title">Hamara Menu</h2><p class="subtitle">Tasty • Fresh • Desi — apni pasand chunein</p>
+ <div class="menu-grid">
+  <article class="item"><div class="food-photo photo1" role="img" aria-label="Samosa"></div><h3>Samosa</h3><p class="price">₹20</p><div class="add-row"><span>Per piece</span><button class="add-btn" onclick="addItem('Samosa',20)">+ Add</button></div></article>
+  <article class="item"><div class="food-photo photo2" role="img" aria-label="Dal Jain Kachori"></div><h3>Dal / Jain Kachori</h3><p class="price">₹20</p><div class="add-row"><span>Per piece</span><button class="add-btn" onclick="addItem('Dal / Jain Kachori',20)">+ Add</button></div></article>
+  <article class="item"><div class="food-photo photo3" role="img" aria-label="Pyaz Kachori"></div><h3>Pyaz Kachori</h3><p class="price">₹25</p><div class="add-row"><span>Per piece</span><button class="add-btn" onclick="addItem('Pyaz Kachori',25)">+ Add</button></div></article>
+ </div>
+</section>
+<section class="order-area" id="order">
+ <h2 class="section-title">Order Online for Pickup</h2><p class="subtitle" style="color:#d8cdbb">Items add karein, details bharein aur order summary ready karein.</p>
+ <div class="order-layout">
+  <div class="order-box"><h2>🛒 Aapka Order</h2><div id="cart"><p class="hint">Abhi koi item add nahi kiya. Menu se “+ Add” dabayein.</p></div><div class="total"><span>Total</span><span id="total">₹0</span></div>
+   <label for="customer">Aapka naam</label><input id="customer" placeholder="Naam likhein">
+   <label for="quantityNote">Order note (optional)</label><textarea id="quantityNote" placeholder="Jaise: 5 baje pickup, extra chutney..."></textarea>
+   <button class="button full" onclick="prepareOrder()">Order Summary Banayein</button><button class="button full" style="background:#fff" onclick="copyOrder()">Summary Copy Karein</button>
+   <div class="toast" id="toast"></div><p class="hint">Note: Shop ka phone number abhi nahi mila hai. Number add hone ke baad yahan se direct call/WhatsApp order chalu kiya ja sakta hai.</p>
+  </div>
+  <div class="location-box" id="location"><h2>📍 Shop Location</h2><p class="address"><strong>Rajasthani Kachori and Snacks</strong><br>Salasar Hanuman Road,<br>Ashoka Tower ke samne</p><a class="button" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Rajasthani+Kachori+Salasar+Hanuman+Road+Ashoka+Tower">Google Maps par location dekhein</a><p class="hint">Online order ke baad shop par aakar pickup karein. Maps mein exact pin confirm kar lena behtar rahega.</p><iframe class="map" title="Shop area map" loading="lazy" src="https://maps.google.com/maps?q=Salasar%20Hanuman%20Road%20Ashoka%20Tower&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe></div>
+ </div>
+</section>
+</main>
+<footer><strong>Rajasthani Kachori and Snacks</strong><br>Salasar Hanuman Road, Ashoka Tower ke samne<br><small>Fresh • Desi • Delicious</small></footer>
+<script>
+const cart={};
+function addItem(name,price){if(!cart[name])cart[name]={price:price,qty:0};cart[name].qty++;renderCart()}
+function changeQty(name,delta){if(!cart[name])return;cart[name].qty+=delta;if(cart[name].qty<=0)delete cart[name];renderCart()}
+function renderCart(){const el=document.getElementById('cart');const entries=Object.entries(cart);if(!entries.length){el.innerHTML='<p class="hint">Abhi koi item add nahi kiya. Menu se “+ Add” dabayein.</p>'}else{el.innerHTML=entries.map(([name,item])=>`<div class="cart-line"><span>${name}<br><small>₹${item.price} × ${item.qty} = ₹${item.price*item.qty}</small></span><span><button onclick="changeQty('${name}',-1)">−</button> ${item.qty} <button onclick="changeQty('${name}',1)">+</button></span></div>`).join('')}document.getElementById('total').textContent='₹'+entries.reduce((sum,[n,i])=>sum+i.price*i.qty,0)}
+function getSummary(){const entries=Object.entries(cart);if(!entries.length)return '';const name=document.getElementById('customer').value.trim()||'Not provided';const note=document.getElementById('quantityNote').value.trim()||'None';let lines=['RAJASTHANI KACHORI AND SNACKS — PICKUP ORDER','Name: '+name,'Items:'];entries.forEach(([n,i])=>lines.push(n+' × '+i.qty+' = ₹'+(i.price*i.qty)));lines.push('Total: '+document.getElementById('total').textContent,'Note: '+note,'Pickup: Salasar Hanuman Road, Ashoka Tower ke samne');return lines.join('\\n')}
+function prepareOrder(){const summary=getSummary();const toast=document.getElementById('toast');toast.style.display='block';toast.textContent=summary?summary:'Pehle menu se koi item add karein.'}
+async function copyOrder(){const summary=getSummary();const toast=document.getElementById('toast');toast.style.display='block';if(!summary){toast.textContent='Pehle menu se koi item add karein.';return}try{await navigator.clipboard.writeText(summary);toast.textContent='Order summary copy ho gayi! Shop ka number add hone par ise call/WhatsApp se bhej sakte hain.'}catch(e){toast.textContent=summary}}
+</script>
+</body>
+</html>
